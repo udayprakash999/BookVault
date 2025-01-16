@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>BookVault - Learn about your books</title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="images/book.png" type="image/x-icon">
+    <script src="/SearchString.js"></script>
+    <script src="https://kit.fontawesome.com/9664c8b16b.js"></script>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+
+            <div class="col-md-12">
+                <div class="book-logo">
+                    <img src="images/book.png" style="width: 120px;" class="responsive">
+                    <h1>BookVault</h1>
+
+                </div>
+               
+                <div class="card mb-4">
+                    <h2 class="card-header" style="background-color: rgb(19, 2, 28); color: aliceblue;"id="fileName">Book Title</h2>
+                    <div class="input-group">
+                        <input type="text" style="background-color: rgba(111, 111, 111, 0.395);" class="form-control" id="keyword" placeholder="Search for a word">
+                        <span class="input-group-btn">
+                            <button class="btn btn-secondary" style="background-color: rgb(33, 69, 213);" type="button" onclick="performMark()">Search</button>
+                        </span>
+                    </div>
+                    <div class="card-footer" id="searchstat">     </div>
+                    <div class="card-body">
+                        <div class="displayBox scroll-box" id="fileContent">
+                            Select a book on the right
+                        </div>
+                    </div>
+                    <div class="card-footer text-muted d-flex justify-content-center">
+                      
+                    </div>
+                    <div class="col-md-12" style="display: flex; justify-content: center; background-color: gainsboro;">
+               
+                        <div class="card my-4" style="background-color: rgb(4, 4, 4); color: antiquewhite; border: wheat 2px dashed;">
+                            <h5 class="card-header" style="border-bottom: rgb(255, 255, 255) 2px dashed;">Select a Book</h5>
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <ul class="list-unstyled mb-0" >
+                                            <li><a href="#"
+                                                    onclick="loadBook('TheLostIslandofAurelia.txt','The Lost Is land of Aurelia')">The Lost Is land of Aurelia</a></li>
+                                            <li><a href="#" onclick="loadBook('TheMidnightLibrary.txt','The Midnight Library')">The Midnight Library</a></li>
+                                            <li><a href="#" onclick="loadBook('TheHiddenCode.txt','The Hidden Code')">The Hidden Code</a></li>
+                                            <li><a href="#" onclick="loadBook('TheLittleKiteThatCould.txt','The Little Kite That Could')">The Little Kite That Could</a></li>
+                                            <li><a href="#" onclick="loadBook('TheJourneyoftheStonecutter.txt','The Journey of the Stonecutter')">The Journey of the Stonecutter</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card my-4" style="background-color: rgb(4, 4, 4); color: antiquewhite; border: wheat 2px dashed;">
+                            <h5 class="card-header"  style="border-bottom: rgb(255, 255, 255) 2px dashed;">Most Used Words</h5>
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <ul class="list-unstyled mb-0" id="mostUsed">
+        
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card my-4"  style="background-color: rgb(4, 4, 4); color: antiquewhite; border: wheat 2px dashed;">
+                            <h5 class="card-header"  style="border-bottom: rgb(255, 255, 255) 2px dashed;">Least Used Words</h5>
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <ul class="list-unstyled mb-0" id="leastUsed">
+        
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card my-4"  style="background-color: rgb(4, 4, 4); color: antiquewhite; border: wheat 2px dashed;">
+                            <h5 class="card-header"  style="border-bottom: rgb(255, 255, 255) 2px dashed;">Document Stats</h5>
+                            <div class="card-body">
+                                <ul class="list-unstyled mb-0">
+                                    <li id="docLength"></li>
+                                    <li id="wordCount"></li>
+                                    <li id="charCount"></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            
+        </div>
+        <script id="template-ul-items" type="text/template">
+            <li>
+               {{val}}
+            </li>    
+        </script>
+        
+</body>
+
+</html>   

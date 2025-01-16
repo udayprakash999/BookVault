@@ -1,0 +1,22 @@
+Riya was a curious 15-year-old who loved coding. While her friends spent hours on social media, Riya explored the endless possibilities of HTML, CSS, and JavaScript. Her small bedroom was a haven for creativity—walls decorated with posters of constellations and her desk lit by a warm lamp, its glow reflecting off her laptop screen.
+
+One stormy evening, as thunder rumbled outside, Riya discovered an old flash drive tucked inside her dad's study drawer. Curious, she plugged it into her laptop. To her surprise, it contained a single file named "TheLegacy.html".
+
+She opened it, and a simple webpage appeared with a single sentence:
+
+"Find the hidden code, and you'll uncover the treasure."
+
+Excitement coursed through her veins. This felt like a challenge meant just for her. She inspected the source code, her fingers flying across the keyboard.
+Riya's eyes sparkled. "Colors?" she muttered. Diving deeper, she noticed the webpage had several divs styled with vibrant colors. Clicking on the red square redirected her to another page with more puzzles.
+
+Each step brought her closer to the treasure: solving riddles with JavaScript, decrypting hidden messages in CSS animations, and piecing together clues embedded in obscure file paths. Hours passed, and her room was filled with the soft hum of her computer and the occasional patter of rain.
+
+Finally, she reached the last page. The screen displayed a congratulatory message:
+
+"Well done, Riya. The treasure is your talent. Keep creating and coding, and the world will be your canvas."
+
+A tear trickled down her cheek as she realized this was a gift from her late mother, who had been a programmer. The flash drive was her way of passing down her passion.
+
+That night, under the glow of her lamp, Riya coded her first major project: a tribute website to her mother, showcasing their shared love for creativity and technology.
+
+From that day forward, every line of code Riya wrote felt like a connection to her past and a step toward her bright future.
